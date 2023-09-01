@@ -1,5 +1,6 @@
 # loan-application
 
+install necessary dependencies using ```npm install```
 Start Application using
 ```npm run dev```
 
