@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/api", (req, res) => {
+app.get("/accounting-software", (req, res) => {
   res.json(data);
 });
 
@@ -20,7 +20,7 @@ app.post("/decision-engine", (req, res) => {
   res.json(outcome);
 });
 
-app.post("/decision", async (req, res) => {
+app.post("/backend", async (req, res) => {
   let totalProfit = 0;
   for (let i = 0; i < data.length; i++) {
     totalProfit += data[i].profitOrLoss;

@@ -7,7 +7,7 @@ const GetDetails = () => {
   const [apiData, setApiData] = useState({});
   useEffect(() => {
     const fetchData = async () => {
-      await fetch("http://localhost:5000/api")
+      await fetch("http://localhost:5000/accounting-software")
         .then((res) => res.json())
         .then((data) => setApiData(data));
     };
